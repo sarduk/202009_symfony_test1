@@ -2,11 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Welcome Grafill!</title>
+        <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-        <h1>Welcome!</h1>
+        
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
