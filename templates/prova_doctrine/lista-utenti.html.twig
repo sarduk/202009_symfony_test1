@@ -1,0 +1,15 @@
+<div>
+lista utenti
+</div>
+
+<div>
+<ul>
+    {% for utente in utenti %}
+        <li>
+        <div>utente</div>
+        <div>id: {{ utente.id }}</div>
+        <div>nome: {{ utente.nome }}</div>
+        </li>
+    {% endfor %}
+</ul>
+</div>
