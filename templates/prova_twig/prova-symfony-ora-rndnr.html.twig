@@ -1,0 +1,9 @@
+{# templates/prova_twig/prova-stampa-ora.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{# "now" | stampaOra() #}
+    <h3>ora : {{  stampaOra(date1)  }}</h3>
+    <h3>numero estratto : {{  myrndnr  }}</h3>
+{% endblock %}

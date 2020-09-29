@@ -29,8 +29,6 @@ class ProvaInterazioneDoctrine extends AbstractController
         
         $utenti = $repository->findAll();
 
-        shuffle($utenti);
-
 ////////
 //QueryBuilder        
         //$qb = $repository->createQueryBuilder('u');
@@ -66,6 +64,8 @@ No, it is not supported to sort by function in DQL. If you need this functionali
             array('id'=>3,'nome'=>'camillo','email'=>'','cognome'=>'','gruppo'=>'',),
         );*/
 ////////
+
+        shuffle($utenti);
 
         return $this->render('prova_doctrine/lista-utenti.html.twig', [
             'utenti' => $utenti,
